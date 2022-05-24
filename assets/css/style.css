@@ -45,6 +45,10 @@ body {
   width: 110px;
   height: 40px;
 }
+.cta-lg {
+  width: 190px;
+  height: 45px;
+}
 
 /* 
   Header area
@@ -84,4 +88,23 @@ header nav .fake-search {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+/* [2] Hero */
+header .hero {
+  min-height: calc(100% - 70px);
+}
+header .hero,
+header .hero article {
+  display: grid;
+  place-items: center;
+}
+header .hero h1 {
+  font-weight: 300;
+  color: #f0f8fb;
+}
+@media (min-width: 768px) {
+  header .hero h1 {
+    font-size: 3.4em;
+  }
 }

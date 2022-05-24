@@ -1,0 +1,87 @@
+/*
+  Global styles
+*/
+
+:root {
+  --primary: #00c6bf;
+  --primary-alt: #00c7c0;
+  --secondary: #ffc501;
+
+  --bg-dark: #19283f;
+  --bg-light: #eff7fa;
+  --bg-yellow: #ffc400;
+
+  --title-dark: #1a2940;
+  --title-light: #fff;
+
+  --red: #ff3150;
+  --gray: #a8b9c0;
+}
+
+body {
+  color: var(--gray);
+  font: 400 15px/1 "Roboto", sans-serif;
+}
+
+/*
+  Components
+*/
+
+.cta {
+  font-size: 15px;
+  font-weight: 500;
+  place-items: center;
+  display: inline-grid;
+  will-change: opacity;
+  text-decoration: none;
+  color: var(--secondary);
+  background-color: var(--red);
+}
+.cta:hover {
+  opacity: 0.8;
+  color: var(--secondary);
+}
+.cta-md {
+  width: 110px;
+  height: 40px;
+}
+
+/* 
+  Header area
+*/
+
+header {
+  height: 100vh;
+  min-height: 500px;
+  background-color: var(--bg-dark);
+}
+
+/* [1] Nav */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    left: 0;
+    top: 70px;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+    height: calc(100vh - 70px);
+    min-height: calc(500px - 70px);
+    background-color: var(--bg-dark);
+  }
+}
+header nav .nav-link {
+  color: inherit;
+}
+header nav .nav-link:hover,
+header nav .nav-link:focus-visible,
+header nav .nav-link.active {
+  color: var(--primary-alt);
+}
+header nav .fake-search {
+  height: 25px;
+  color: var(--primary);
+  border-left: 1px solid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}

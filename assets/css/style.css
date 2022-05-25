@@ -290,3 +290,12 @@ header .hero h1 {
   line-height: 1.4;
   margin-bottom: 0;
 }
+
+/* [5] Clients */
+.clients {
+  height: 182px;
+  place-items: center;
+}
+.clients .row {
+  row-gap: 20px;
+}

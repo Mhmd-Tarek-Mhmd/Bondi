@@ -299,3 +299,15 @@ header .hero h1 {
 .clients .row {
   row-gap: 20px;
 }
+
+/* [6] Advertise */
+.advertise {
+  height: 389px;
+  place-items: center;
+  background-color: var(--bg-dark);
+}
+.advertise h2 {
+  font-size: 35px;
+  font-weight: 500;
+  color: var(--title-light);
+}

@@ -311,3 +311,26 @@ header .hero h1 {
   font-weight: 500;
   color: var(--title-light);
 }
+
+/* [7] Blog */
+.blog {
+  padding-bottom: 60px;
+}
+.blog .card {
+  margin: auto;
+  max-width: 350px;
+}
+.blog h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--title-dark);
+}
+.blog small {
+  font-size: 13px;
+}
+.blog .fake-btn {
+  left: 50%;
+  cursor: default;
+  position: relative;
+  transform: translateX(-50%);
+}

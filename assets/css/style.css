@@ -259,3 +259,34 @@ header .hero h1 {
     margin-right: auto;
   }
 }
+
+/* [4] Team */
+.team {
+  padding: 110px 0 60px;
+  background-color: #eff7fa;
+}
+.team h2 {
+  font-size: 35px;
+  font-weight: 500;
+  color: var(--secondary);
+}
+.team .card {
+  max-width: 300px;
+}
+.team .card-body > * {
+  display: grid;
+  place-items: center;
+}
+.team .card .title {
+  height: 50px;
+  font-size: 20px;
+  margin-bottom: 0;
+  color: var(--title-light);
+  background-color: var(--primary);
+}
+.team .card .quote {
+  height: 120px;
+  padding: 0 25px;
+  line-height: 1.4;
+  margin-bottom: 0;
+}

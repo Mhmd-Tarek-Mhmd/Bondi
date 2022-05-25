@@ -171,3 +171,62 @@ header .hero h1 {
   max-width: 300px;
   line-height: 30px;
 }
+
+/* [2] Portfolio */
+.portfolio {
+  padding-bottom: 60px;
+  background-color: var(--bg-light);
+}
+.portfolio .nav-link {
+  height: 44px;
+  color: inherit;
+  border-radius: 10px;
+}
+.portfolio .nav-link.active {
+  color: var(--secondary);
+  background-color: var(--red);
+}
+.portfolio .tab-content > .row {
+  display: none;
+}
+.portfolio .tab-content > .active {
+  display: flex;
+}
+.portfolio figure {
+  position: relative;
+}
+.portfolio figure::before,
+.portfolio figure::after {
+  display: none;
+  position: absolute;
+  will-change: display;
+}
+.portfolio figure:hover::before,
+.portfolio figure:hover::after {
+  display: grid;
+}
+.portfolio figure::before {
+  font-size: 20px;
+  place-items: center;
+  color: var(--title-light);
+  inset: 0 0.75rem 0 0.75rem;
+  background-color: var(--primary);
+  content: "Title";
+  /* content: attr(data-title) */
+}
+@media (max-width: 767px) {
+  .portfolio figure::before {
+    inset: 0 15px 0 15px;
+  }
+}
+.portfolio figure::after {
+  left: 50%;
+  top: calc(50% + 29px);
+  color: var(--title-dark);
+  transform: translate(-50%, -50%);
+  content: "/Type";
+  /* content: attr(data-type) */
+}
+.portfolio .fake-btn {
+  cursor: default;
+}

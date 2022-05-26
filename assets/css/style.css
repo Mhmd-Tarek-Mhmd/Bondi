@@ -362,3 +362,61 @@ header .hero h1 {
 .newsletter .cta {
   background-color: var(--bg-dark);
 }
+
+/*
+  Footer area
+*/
+
+footer {
+  padding: 60px 0;
+  font-size: 13px;
+  background-color: var(--bg-dark);
+}
+@media (min-width: 992px) {
+  footer.pb-4 {
+    padding-bottom: 60px !important;
+  }
+}
+footer .copyrights p:first-of-type span {
+  color: var(--primary-alt);
+}
+footer .copyrights p:last-of-type span {
+  color: var(--secondary);
+}
+footer h3 {
+  font-size: 15px;
+  color: #f0f8fb;
+  font-weight: 400;
+}
+footer .lh-xs {
+  line-height: 35px;
+}
+footer .nav-link {
+  color: inherit;
+  font-size: 13px;
+}
+footer .nav-link:hover,
+footer .nav-link:focus-visible,
+footer .nav-link.active {
+  color: var(--primary-alt);
+}
+footer .social a {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  border-radius: 50%;
+  place-items: center;
+  color: var(--title-light);
+}
+footer .social a[aria-label~="facebook"] {
+  background-color: #347cd2;
+}
+footer .social a[aria-label~="twitter"] {
+  background-color: #1ec4ff;
+}
+footer .social a[aria-label~="google"] {
+  background-color: #ff4032;
+}
+footer .social a[aria-label~="dribbble"] {
+  background-color: #ff3298;
+}

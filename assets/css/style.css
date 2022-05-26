@@ -334,3 +334,31 @@ header .hero h1 {
   position: relative;
   transform: translateX(-50%);
 }
+
+/* [8] Newsletter */
+.newsletter {
+  background-color: #ffc400;
+}
+.newsletter h2 {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--title-dark);
+}
+.newsletter ::-webkit-input-placeholder {
+  color: var(--title-light);
+}
+.newsletter ::-moz-placeholder {
+  color: var(--title-light);
+}
+.newsletter :-ms-input-placeholder {
+  color: var(--title-light);
+}
+.newsletter ::-ms-input-placeholder {
+  color: var(--title-light);
+}
+.newsletter ::placeholder {
+  color: var(--title-light);
+}
+.newsletter .cta {
+  background-color: var(--bg-dark);
+}

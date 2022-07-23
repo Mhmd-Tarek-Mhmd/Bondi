@@ -20,6 +20,67 @@
     <link rel="stylesheet" href="assets/css/style.min.css" />
   </head>
   <body class="text-gray text-[15px]">
+    <!-- 
+      Header area
+    -->
+
+    <header class="h-screen min-h-[500px] bg-dark">
+      <!-- [1] Navbar -->
+      <nav class="px-4">
+        <div class="min-h-[70px] flex justify-between items-center">
+          <a class="" href="/" aria-label="To home page">
+            <img
+              aria-hidden="true"
+              class="h-8 sm:h-11"
+              src="assets/images/logo.png"
+              alt=""
+            />
+          </a>
+
+          <div role="menubar" class="flex gap-4 items-center">
+            <ul
+              role="list"
+              class="flex gap-2 sm:gap-4 text-[13px] md:text-[15px]"
+            >
+              <li>
+                <a class="text-primary-alt" aria-current="page" href="/"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="hover:text-primary-alt" href="/">Services</a>
+              </li>
+              <li>
+                <a class="hover:text-primary-alt" href="/">Portfolio</a>
+              </li>
+              <li>
+                <a class="hover:text-primary-alt" href="/">About</a>
+              </li>
+              <li>
+                <a class="hover:text-primary-alt" href="/">Contact</a>
+              </li>
+            </ul>
+
+            <div
+              class="
+                hidden
+                lg:flex
+                pl-4
+                text-primary
+                border-l-[1px] border-solid
+                items-center
+              "
+              aria-hidden="true"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <a href="/" class="hidden lg:cta md rounded-full">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
     <script src="assets/js/fontawesome.min.js"></script>
   </body>
 </html>
